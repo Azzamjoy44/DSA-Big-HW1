@@ -27,7 +27,7 @@ This main program uses the stack implementation to find Homer Simpson in a serie
 ### Instructions for the user:
 DO NOT under any circumstances, input anything other than an integer when prompted for input by the program. If you input another data type, the program may not work correctly.
 
-#1.# Firstly, you are asked for the size N. Input an integer greater than 1. Then an N x N matrix will begin to generate.
+1. Firstly, you are asked for the size N. Input an integer greater than 1. Then an N x N matrix will begin to generate.
 2. Afterwards, you will need to fill the matrix with 1s and 0s. You must do as the program says and input a 1 or 0. Keep inputting 1s and 0s until the program stops asking you to do so. The position in which you are inputting a 1 or 0 will be on the left side of the screen.
    - Please note that positions (i, j) where i = j will be automatically filled with a 0 by the program. When i ≠ j, the program will ask you to input a 1 or 0.
    - In order to make a matrix with Homer in it, before inputting any 0s and 1s, decide which row index you would like Homer to be. Once you decide the row index, you must do the following:
