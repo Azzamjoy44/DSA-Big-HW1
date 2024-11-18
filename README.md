@@ -1,8 +1,16 @@
-# DSA-Big-HW1
-Data Structures and Algorithms Big Assignment 1, Year 1 Semester 2
+# Project Overview
 
+This repository contains implementations for three distinct programs:
 
-# Homer Simpson Finding Program
+1. **Homer Simpson Finding Program**
+2. **Restaurant Order Management System**
+3. **Polynomial Operations**
+
+Each program is described in detail below, with instructions on how to use them.
+
+---
+
+# 1. Homer Simpson Finding Program
 
 This program consists of two parts: a template-based stack implementation named "Ethan's Stack" and a main program that uses the stack to find a person of interest, "Homer Simpson," in a series of dinner events. The file `Ethan’s Stack.h` contains the stack class declaration and definition and the file `Ethan Hunt.cpp` contains the main function and a function which prints a matrix.
 
@@ -40,7 +48,7 @@ DO NOT under any circumstances, input anything other than an integer when prompt
 
 ---
 
-# Restaurant Order Management System
+# 2. Restaurant Order Management System
 
 This program simulates a restaurant order management system. It reads order information from a file, calculates the completion time for each order, and checks if all orders are completed within the specified maximum allowed duration. The program also determines when the chef can take breaks between orders. The program uses the standard C++ queue data structure to complete the tasks.
 
@@ -53,6 +61,7 @@ This program simulates a restaurant order management system. It reads order info
 6. Prints order and chef break information, maximum order duration, and overall completion status
 
 ## Structure:
+The code is organized into two main structures:
 - **Order**: Represents an individual order with arrival time and duration.
 - **res**: Represents a restaurant with a queue of orders, number of orders, and the maximum allowed order duration.
 
@@ -75,7 +84,7 @@ This program simulates a restaurant order management system. It reads order info
 
 ### Example:
 
-Input: `abd.txt`
+**Input: `abd.txt`**
 
 5 21
 
@@ -90,7 +99,7 @@ Input: `abd.txt`
 18 7
 
 
-Output:
+**Output**:
 
 Chef has a break: 0 to 1
 
@@ -110,9 +119,10 @@ Order 5: expected completion time = 25, actual completion time = 25;
 
 the max duration:7 there are orders which are not completed or the chef finished them after time 21
 
+
 ---
 
-# Polynomial Operations
+# 3. Polynomial Operations
 
 This program demonstrates the use of various polynomial operation functions. It handles operations on both real and complex polynomials, including input, display, addition, and multiplication. The program also allows users to evaluate a real polynomial at a given value of x. The file `Polynomials.h` contains the declaration and definition of the classes and functions used. The file `Polynomials.cpp` includes the main program which uses the classes and functions declared and defined in `Polynomials.h` to show the polynomial operation functions in action. The program uses a template-based linked list to represent polynomials.
 
@@ -141,7 +151,7 @@ The provided functions offer the following functionality:
 DO NOT under any circumstances, input a letter or special character like `*`, `#`, `$`, etc.
 
 1. **Input a Real Polynomial**:
-   - The program will first ask you to input the degree of the polynomial. Input a degree greater than or equal to 0.
+   - You will first input a real polynomial. The program will first ask you to input the degree of the polynomial. Input a degree greater than or equal to 0.
    - Then, you will be prompted to input the exponent and coefficient respectively for the terms of the polynomial:
      - For the exponent, input an integer greater than or equal to zero and less than or equal to the degree (`0 <= exponent <= degree`).
      - For the coefficient, input a real number (positive or negative).
@@ -156,11 +166,11 @@ DO NOT under any circumstances, input a letter or special character like `*`, `#
      - Print the polynomial onto the screen for you to see.
 
 2. **Input a Second Real Polynomial**:
-   - Input a degree greater than or equal to zero like you did in step 1 and input the terms as in steps 2-3.
+   - You will then need to input a second real polynomial just like you did in step 1.
 
 3. **Calculate Results**:
    - The program will calculate the sum and product of the two real polynomials and print the results to the screen.
-   - It will then calculate the sum and product of the sum and product of the two real polynomials and print the results.
+   - It will then calculate the sum and product of the sum and product of the original two real polynomials you inputted and print the results.
 
 4. **Input a Complex Polynomial**:
    - Input the degree of the polynomial (integer greater than or equal to zero).
@@ -180,12 +190,8 @@ DO NOT under any circumstances, input a letter or special character like `*`, `#
      - Print the polynomial onto the screen for you to see.
 
 5. **Input a Second Complex Polynomial**:
-   - Input a degree greater than or equal to zero like you did in step 4 and input the terms as in steps 7-8.
+   - You will then need to input a second complex polynomial in the same way you did in step 4.
 
 6. **Calculate Results for Complex Polynomials**:
    - The program will calculate the sum of the two complex polynomials you inputted and print the result to the screen.
-   - It will then calculate the sum of the first complex polynomial and the previous sum polynomial and print the result to the screen.
-
----
-
-**Note**: After completing the above steps for both real and complex polynomials, program execution will stop.
+   - It will then calculate the sum of the first complex polynomial you inputted and the previous sum polynomial and print the result to the screen. Afterwards, code execution will stop.
