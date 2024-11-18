@@ -109,3 +109,83 @@ Chef has a break: 17 to 18
 Order 5: expected completion time = 25, actual completion time = 25;
 
 the max duration:7 there are orders which are not completed or the chef finished them after time 21
+
+---
+
+# Polynomial Operations
+
+This program demonstrates the use of various polynomial operation functions. It handles operations on both real and complex polynomials, including input, display, addition, and multiplication. The program also allows users to evaluate a real polynomial at a given value of x. The file `Polynomials.h` contains the declaration and definition of the classes and functions used. The file `Polynomials.cpp` includes the main program which uses the classes and functions declared and defined in `Polynomials.h` to show the polynomial operation functions in action. The program uses a template-based linked list to represent polynomials.
+
+## Part 1: Polynomial and Linked List Classes
+
+### Linked List Class Functions:
+The provided functions offer the following functionality:
+- **LinkedList()**: Constructor which initializes `firstPointer` and `lastPointer` to `NULL`.
+- **addLast(T term)**: Adds (pushes) a node to the end of the list.
+- **findFirstOccurrence(T data)**: Finds the first occurrence of given data in the linked list.
+
+### Polynomial Class Functions:
+The provided functions offer the following functionality:
+- **void inputRealPolynomial()**: Input the terms for a real polynomial.
+- **void inputComplexPolynomial()**: Input the terms for a complex polynomial.
+- **void displayRealPolynomial()**: Display a real polynomial in human-readable format.
+- **void displayComplexPolynomial()**: Display a complex polynomial in human-readable format.
+- **double inputXForRealPolynomial(double x)**: Input the value of `x` to evaluate a real polynomial.
+- **Polynomial addRealPolynomials(Polynomial p)**: Add two real polynomials.
+- **Polynomial addComplexPolynomials(Polynomial p)**: Add two complex polynomials.
+- **Polynomial multiplyRealPolynomials(Polynomial p)**: Multiply two real polynomials.
+
+## Part 2: Main Program
+
+### Instructions for the User:
+DO NOT under any circumstances, input a letter or special character like `*`, `#`, `$`, etc.
+
+1. **Input a Real Polynomial**:
+   - The program will first ask you to input the degree of the polynomial. Input a degree greater than or equal to 0.
+   - Then, you will be prompted to input the exponent and coefficient respectively for the terms of the polynomial:
+     - For the exponent, input an integer greater than or equal to zero and less than or equal to the degree (`0 <= exponent <= degree`).
+     - For the coefficient, input a real number (positive or negative).
+     - You do not need to input every exponent.
+     - You can input the terms’ exponents in any order you like.
+     - You can input exponents you have already inputted previously.
+   - The program will give you the option to stop inputting terms once you input a non-zero coefficient for the degree of the polynomial. You may continue to input as many terms as you want.
+     - **Important**: DO NOT input the coefficients for the degree in such a way that the sum of the coefficients of the degree will equal zero. This may cause the program to function improperly. The coefficient of the degree must NOT be zero.
+   - Once you finish inputting terms, the program will:
+     - Add the terms with the same exponent together.
+     - Sort the terms in ascending order of exponents.
+     - Print the polynomial onto the screen for you to see.
+
+2. **Input a Second Real Polynomial**:
+   - Input a degree greater than or equal to zero like you did in step 1 and input the terms as in steps 2-3.
+
+3. **Calculate Results**:
+   - The program will calculate the sum and product of the two real polynomials and print the results to the screen.
+   - It will then calculate the sum and product of the sum and product of the two real polynomials and print the results.
+
+4. **Input a Complex Polynomial**:
+   - Input the degree of the polynomial (integer greater than or equal to zero).
+   - Then input the exponent and complex coefficient (real and imaginary parts) for each term:
+     - For the exponent, input an integer greater than or equal to zero and less than or equal to the degree (`0 <= exponent <= degree`).
+     - For the complex coefficient:
+       - Input a real number for the real part (positive or negative).
+       - Input a real number for the imaginary part (positive or negative).
+     - You do not need to input every exponent.
+     - You can input the terms’ exponents in any order you like.
+     - You can input exponents you have already inputted previously.
+   - The program will give you the option to stop inputting terms once you input a non-zero coefficient for the degree of the polynomial. You may continue to input as many terms as you want.
+     - **Important**: DO NOT input the coefficients for the degree in such a way that the sum of the coefficients of the degree will equal zero. This may cause the program to function improperly. The coefficient of the degree must NOT be zero.
+   - Once you finish inputting terms, the program will:
+     - Add the terms with the same exponent together.
+     - Sort the terms in ascending order of exponents.
+     - Print the polynomial onto the screen for you to see.
+
+5. **Input a Second Complex Polynomial**:
+   - Input a degree greater than or equal to zero like you did in step 4 and input the terms as in steps 7-8.
+
+6. **Calculate Results for Complex Polynomials**:
+   - The program will calculate the sum of the two complex polynomials you inputted and print the result to the screen.
+   - It will then calculate the sum of the first complex polynomial and the previous sum polynomial and print the result to the screen.
+
+---
+
+**Note**: After completing the above steps for both real and complex polynomials, program execution will stop.
