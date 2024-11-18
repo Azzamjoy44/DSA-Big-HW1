@@ -76,6 +76,7 @@ This program simulates a restaurant order management system. It reads order info
 ### Example:
 
 Input: `abd.txt`
+
 5 21
 
 1 3
