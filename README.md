@@ -91,12 +91,21 @@ Input: `abd.txt`
 
 
 Output:
+
 Chef has a break: 0 to 1
+
 Order 1: expected completion time = 4, actual completion time = 4;
+
 Order 2: expected completion time = 7, actual completion time = 8;
+
 Chef has a break: 8 to 10
+
 Order 3: expected completion time = 12, actual completion time = 12;
+
 Order 4: expected completion time = 16, actual completion time = 17;
+
 Chef has a break: 17 to 18
+
 Order 5: expected completion time = 25, actual completion time = 25;
+
 the max duration:7 there are orders which are not completed or the chef finished them after time 21
